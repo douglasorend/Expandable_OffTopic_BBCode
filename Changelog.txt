@@ -1,3 +1,6 @@
+v3.2a - November 25th, 2017
+o Altered [b]readme.txt[/b] to reflect that mod is no longer being supported.
+
 v3.2 - February 10th, 2017
 o Added code so that the border underneath the "OffTopic" text could be removed.
 o Fixed code where guests are not allowed to view OffTopics, but could anyways.
