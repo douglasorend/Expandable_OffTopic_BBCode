@@ -1,3 +1,7 @@
+v3.2b - October 17th, 2018
+o No functionality change.
+o Updated documentation to point to new website.
+
 v3.2a - November 25th, 2017
 o Altered [b]readme.txt[/b] to reflect that mod is no longer being supported.
 
