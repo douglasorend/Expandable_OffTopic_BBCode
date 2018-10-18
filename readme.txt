@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v1.4[/b][/size][/color]
+[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v1.5[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=3990]Link to Mod[/url]
 [/center]
 [hr]
@@ -8,16 +8,22 @@
 This modification adds a BBCode to the forum that allows the post author to hide off-topic messages in the post, which is clickable to display it to the user.
 
 This BBCode takes the form:
-[code][offtopic]{content goes here}[/offtopic][/code]
+[code][nobbc][offtopic=Some Text]{content goes here}[/offtopic]
+[offtopic]{content goes here}[/offtopic][/nobbc][/code]
 
 [color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
-There are no admin settings to this mod.  To disable, you must uninstall this mod.
+This BBCode may be disabled by going into the [b]Admin[/b] => [b]Forum[/b] => [b]Posts and Topics[/b] => [b]Bulletin Board Code[/b] and unchecking the bbcodes you don't want to use.  You may also be uninstall this mod in order to disable it.
 
 [color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
 This mod was tested on SMF 2.0.9, but should work on SMF 2.0 and up.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
+[color=blue][b][size=12pt][u]offtopic[/u][/size][/b][/color]
 [quote]
+[b][u]v1.5 - December 30th, 2014[/u][/b]
+o [b]language.xml[/b] file renamed to [b]english.xml[/b]
+o Added new form of the bbcode: [b][nobbc][offtopic=Some Text]Content Here[/offtopic][/nobbc][/b]
+o Changed bbcode definition code based on bbcodes defined in [b]Sources/Subs.php[/b]...
+
 [b][u]v1.4 - December 29th, 2014[/u][/b]
 o Fixed image install locations within [b]package-info.xml[/b].
 
