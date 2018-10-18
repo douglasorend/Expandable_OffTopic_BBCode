@@ -23,8 +23,10 @@ function BBCode_OffTopic(&$bbc)
 		'parameters' => array(
 			'text' => array('optional' => true),
 			'quote' => array('optional' => true, 'quoted' => true),
+			'show' => array('optional' => true),
+			'hide' => array('optional' => true),
 		),
-		'content' => '<div style="padding: 3px; font-size: 1em;"><div style="text-transform: uppercase; border-bottom: 1px solid #5873B0; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display != \'\') {  this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display = \'\'; this.innerHTML = \'<b>>{text}{quote}: </b><a href=\\\'#\\\' onClick=\\\'return false;\\\'>' . $txt["debug_hide"] . '</a>\'; } else { this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display = \'none\'; this.innerHTML = \'<b>{text}{quote}: </b><a href=\\\'#\\\' onClick=\\\'return false;\\\'>' . $txt["debug_show"] . '</a>\'; }" /><b>{text}{quote}: </b><a href="#" onClick="return false;">' . $txt["debug_show"] . '</a></span></div><div class="quotecontent"><div style="display: none;">$1</div></div></div>',
+		'content' => '<div style="padding: 3px; font-size: 1em;"><div style="text-transform: uppercase; border-bottom: 1px solid #5873B0; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display != \'\') {  this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display = \'\'; this.innerHTML = \'<b>><text>{text}</text>{quote}: </b><a href=\\\'#\\\' onClick=\\\'return false;\\\'><hide>{hide}</hide></a>\'; } else { this.parentNode.parentNode.getElementsByTagName(\'div\')[1].getElementsByTagName(\'div\')[0].style.display = \'none\'; this.innerHTML = \'<b><text>{text}</text>{quote}: </b><a href=\\\'#\\\' onClick=\\\'return false;\\\'><show>{show}</show></a>\'; }" /><b><text>{text}</text>{quote}: </b><a href="#" onClick="return false;"><show>{show}</show></a></span></div><div class="quotecontent"><div style="display: none;">$1</div></div></div>',
 		'validate' => 'BBCode_OffTopic_Validate',
 		'block-level' => true,
 	);
@@ -53,10 +55,17 @@ function BBCode_OffTopic(&$bbc)
 
 function BBCode_OffTopic_Validate(&$tag, &$data, &$disabled)
 {
+	global $txt;
+
 	if (empty($data))
-		$tag['content'] = '';
-	else
-		$data = parse_bbc($data);
+		return ($tag['content'] = '');
+	$data = parse_bbc($data);
+	$tag['content'] = str_replace('<show></show>', $txt['debug_show'], $tag['content']);
+	$tag['content'] = str_replace('<show>', '', str_replace('</show>', '', $tag['content']));
+	$tag['content'] = str_replace('<hide></hide>', $txt['debug_hide'], $tag['content']);
+	$tag['content'] = str_replace('<show>', '', str_replace('</show>', '', $tag['content']));
+	$tag['content'] = str_replace('<text></text>', $txt['offtopic'], $tag['content']);
+	$tag['content'] = str_replace('<text>', '', str_replace('</text>', '', $tag['content']));
 }
 
 function BBCode_OffTopic_Button(&$buttons)

@@ -1,3 +1,6 @@
+v2.1 - November 18th, 2015
+o Added "show" and "hide" parameters to replace default "show"/"hide" text with user specified text.
+
 v2.0 - November 14th, 2015
 o Changed all spoiler tags to block-level tags.
 o Changed bbcode tag types so that a validation function can be used to parse content inside tags.

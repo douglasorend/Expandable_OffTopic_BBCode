@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v2.0[/b][/size][/color]
+[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v2.1[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=3981]Link to Mod[/url]
 [/center]
 [hr]
@@ -20,6 +20,11 @@ This BBCode can also take the following form:
 [offtopic=Some Text]{content goes here}[/offtopic]
 [/nobbc][/code]
 Note that, for this form, other block-level bbcode tags are not parsed inside this [b]offtopic[/b] tags form.
+
+[u][b]NEW FOR 2.1:[/b][/u]
+Version 2.1 introduces two optional parameters for use:
+o [b]hide[/b] parameter indicates the text to replace the default "hide" string
+o [b]show[/b] parameter indicates the text to replace the default "show" string.
 
 [color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
 This BBCode may be disabled by going into the [b]Admin[/b] => [b]Forum[/b] => [b]Posts and Topics[/b] => [b]Bulletin Board Code[/b] and unchecking the bbcodes you don't want to use.  You may also be uninstall this mod in order to disable it.
