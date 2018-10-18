@@ -1,3 +1,9 @@
+v2.0 - November 14th, 2015
+o Changed all spoiler tags to block-level tags.
+o Changed bbcode tag types so that a validation function can be used to parse content inside tags.
+o Changed the [b][nobbc][spoiler=text]{content}[/spoiler][/nobbc][/b] form to not parse other block-level tags.
+o Moved all language modifications to the end of the language file.
+
 v1.8 - July 20th, 2015
 o Fixed missing BBCode button in editor for SMF 2.1 Beta 1.
 o Remade Off-topic bbcode button with different font.
