@@ -23,6 +23,7 @@ $hook_functions = array(
 	'integrate_pre_include' => '$sourcedir/Subs-BBCode-OffTopic.php',
 	'integrate_bbc_codes' => 'BBCode_OffTopic',
 	'integrate_bbc_buttons' => 'BBCode_OffTopic_Button',
+	'integrate_general_mod_settings' => 'BBCode_OffTopic_Settings',
 );
 
 // Adding or removing them?

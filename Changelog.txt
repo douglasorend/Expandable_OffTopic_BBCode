@@ -1,3 +1,8 @@
+v3.2 - February 10th, 2017
+o Added code so that the border underneath the "OffTopic" text could be removed.
+o Fixed code where guests are not allowed to view OffTopics, but could anyways.
+o Fixed code where guests were allowed to view OffTopics, but couldn't.
+
 v3.1 - April 4th, 2016
 o Added Spanish Latin translation by [url=http://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee [BC][/url].
 

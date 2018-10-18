@@ -2,7 +2,7 @@
 <!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>Dougiefresh:BBCode_Changelog</id>
-<version>3.1</version>
+<version>3.2</version>
 
 <file name="$languagedir/index.english.php">
 	<operation>
@@ -10,6 +10,9 @@
 		<add><![CDATA[
 $txt['offtopic'] = "Off-Topic";
 $txt['debug_hide'] = 'hide';
+$txt['offtopic_no_guests'] = 'Check to disable Off-Topics for guests globally:';
+$txt['offtopic_no_guest_html'] = '[ You must <a href="' . $scripturl . '?action=login">login</a> or <a href="' . $scripturl . '?action=register">register</a> to view this Off-Topic! ]';
+$txt['offtopic_no_border'] = 'Check to disable border beneath Off-Topic text:';
 ]]></add>
 	</operation>
 </file>
@@ -19,6 +22,9 @@ $txt['debug_hide'] = 'hide';
 		<add><![CDATA[
 $txt['offtopic'] = "Off-Topic";
 $txt['debug_hide'] = 'hide';
+$txt['offtopic_no_guests'] = 'Check to disable Off-Topics for guests globally:';
+$txt['offtopic_no_guest_html'] = '[ You must <a href="' . $scripturl . '?action=login">login</a> or <a href="' . $scripturl . '?action=register">register</a> to view this Off-Topic! ]';
+$txt['offtopic_no_border'] = 'Check to disable border beneath Off-Topic text:';
 ]]></add>
 	</operation>
 </file>
