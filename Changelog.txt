@@ -1,0 +1,26 @@
+v1.7 - April 4th, 2015
+o Updated for SMF 2.1 Beta 1
+
+v1.6 - January 16th, 2015
+o License change to Simplified BSD.  No functionality change.
+
+v1.5 - December 30th, 2014
+o language.xml file renamed to english.xml
+o Added new form of the bbcode: [offtopic=Some Text]Content Here[/offtopic]
+o Changed bbcode definition code based on bbcodes defined in Sources/Subs.php...
+
+v1.4 - December 29th, 2014
+o Fixed image install locations within package-info.xml.
+
+v1.3 - December 10th, 2014
+o Added button for the bbcode.
+
+v1.2 - December 6th, 2014
+o Added code to disable creation of the validation code if BBCode is disabled.
+
+v1.1 - December 5th, 2014
+o Made the "show" and "hide" strings localizable.
+o Modified code to replace the strings once per page load, instead of every use of the BBCode.
+
+v1.0 - November 22th, 2014
+o Initial Release of the mod
