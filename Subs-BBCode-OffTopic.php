@@ -76,8 +76,8 @@ function BBCode_OffTopic_Button(&$buttons)
 		'image' => 'offtopic',
 		'code' => 'offtopic',
 		'description' => $txt['offtopic'],
-		'before' => '[spoiler]',
-		'after' => '[/spoiler]',
+		'before' => '[offtopic]',
+		'after' => '[/offtopic]',
 	);
 }
 

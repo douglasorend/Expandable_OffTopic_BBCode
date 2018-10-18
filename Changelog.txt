@@ -1,3 +1,6 @@
+v2.2 - November 19th, 2015
+o Fixed issue where bbcode button outputted wrong bbcode when pressed.
+
 v2.1 - November 18th, 2015
 o Added "show" and "hide" parameters to replace default "show"/"hide" text with user specified text.
 
