@@ -1,3 +1,6 @@
+v3.1 - April 4th, 2016
+o Added Spanish Latin translation by [url=http://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee [BC][/url].
+
 v3.0 - Febrary 13th, 2016
 o Added "expand" parameter to indicate whether or not the offtopic is expanded by default.
 o Rewrote offtopic validation function to support new parameter.

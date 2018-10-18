@@ -4,22 +4,19 @@
 <id>Dougiefresh:BBCode_Changelog</id>
 <version>3.1</version>
 
-<file name="$languagedir/index.english.php">
+<file name="$languagedir/index.spanish_latin.php" error="skip">
 	<operation>
 		<search position="end" />
 		<add><![CDATA[
-$txt['offtopic'] = "Off-Topic";
-$txt['debug_hide'] = 'hide';
-]]></add>
+$txt['spoiler'] = "Spoiler";
+$txt['debug_hide'] = 'Ocultar';
 	</operation>
 </file>
-<file name="$languagedir/index.english-utf8.php" error="skip">
-	<operation>
+<file name="$languagedir/index.spanish_latin-utf8.php" error="skip">
 		<search position="end" />
 		<add><![CDATA[
-$txt['offtopic'] = "Off-Topic";
-$txt['debug_hide'] = 'hide';
-]]></add>
+$txt['spoiler'] = "Spoiler";
+$txt['debug_hide'] = 'Ocultar';
 	</operation>
 </file>
 </modification>
