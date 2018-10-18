@@ -5,17 +5,19 @@
 	<id>Dougiefresh:OffTopic</id>
 	<name>Expanding & Collapsing Off-Topic Tag</name>
 	<type>modification</type>
-	<version>1.2</version>
+	<version>1.3</version>
 
 	<install for="2.0 - 2.0.99">
 		<readme parsebbc="true">readme.txt</readme>
 		<code>add_remove_hooks.php</code>
 		<modification type="file">language.xml</modification>
 		<require-file name="Subs-BBCode-OffTopic.php" destination="$sourcedir" />
+		<require-file name="offtopic.gif" destination="$themedir/images/bbc" />
 	</install>
 	<uninstall for="2.0 - 2.0.99">
 		<code>add_remove_hooks.php</code>
 		<modification type="file" reverse="true">language.xml</modification>
 		<remove-file name="$sourcedir/Subs-BBCode-OffTopic.php" />		
+		<remove-file name="$themedir/images/bbc/offtopic.gif" />
 	</uninstall>
 </package-info>

@@ -1,6 +1,6 @@
 <?php
 /**********************************************************************************
-* Subs-BBCode-Changelog.php
+* Subs-BBCode-offtopic.php
 ***********************************************************************************
 ***********************************************************************************
 * This program is distributed in the hope that it is and will be useful, but      *
@@ -23,6 +23,19 @@ function BBCode_OffTopic(&$bbc)
 				$tag["content"] = $tmp;
 			}
 		'),
+	);
+}
+
+function BBCode_OffTopic_Button(&$buttons)
+{
+	global $txt;
+
+	$buttons[count($buttons) - 1][] = array(
+		'image' => 'offtopic',
+		'code' => 'offtopic',
+		'description' => $txt['offtopic'],
+		'before' => '[offtopic]',
+		'after' => '[/offtopic]',
 	);
 }
 
