@@ -11,6 +11,11 @@
 
 // Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></add>
 	</operation>
+	<operation>
+		<search position="replace"><![CDATA[$txt['debug_show'] = 'show';]]></search>
+		<add><![CDATA[$txt['debug_show'] = 'show';
+$txt['debug_hide'] = 'hide';]]></add>
+	</operation>
 </file>
 <file name="$languagedir/index.english-utf8.php" error="skip">
 	<operation>
@@ -18,6 +23,11 @@
 		<add><![CDATA[$txt['offtopic'] = "Off-Topic";
 
 // Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[$txt['debug_show'] = 'show';]]></search>
+		<add><![CDATA[$txt['debug_show'] = 'show';
+$txt['debug_hide'] = 'hide';]]></add>
 	</operation>
 </file>
 </modification>

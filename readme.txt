@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v1.0[/b][/size][/color]
+[center][color=red][size=16pt][b]EXPANDING & COLLAPSING OFFTOPIC TAG v1.1[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=3990]Link to Mod[/url]
 [/center]
 [hr]
@@ -18,7 +18,11 @@ This mod was tested on SMF 2.0.9, but should work on SMF 2.0 and up.
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
 [quote]
-v1.0 - November 27th, 2014
+[b][u]v1.1 - December 5th, 2014[/u][/b]
+o Made the "show" and "hide" strings localizable.
+o Modified code to replace the strings once per page load, instead of every use of the BBCode.
+
+[b][u]v1.0 - November 22th, 2014[/u][/b]
 o Initial Release of the mod
 [/quote]
 
