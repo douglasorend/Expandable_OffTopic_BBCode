@@ -1,3 +1,7 @@
+v3.0 - Febrary 13th, 2016
+o Added "expand" parameter to indicate whether or not the offtopic is expanded by default.
+o Rewrote offtopic validation function to support new parameter.
+
 v2.3 - December 30th, 2015
 o Fixed minor visual issue with Offtopic tag without parameters.
 
